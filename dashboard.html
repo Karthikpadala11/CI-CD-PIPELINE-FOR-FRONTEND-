@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
+<!-- SAME NAVBAR -->
+<nav>
+  <h2 id="welcome"></h2>
+</nav>
+
+<!-- KEEP YOUR HEADER / HERO SECTION -->
+<header class="section__container header__container">
+  <div class="header__content">
+    <h1>Book Your Flight </h1>
+  </div>
+</header>
+
+<!-- SEARCH SECTION -->
+<section style="text-align:center; padding:50px;">
+  <h2>Search Flights</h2>
+
+  <input type="text" id="from" placeholder="From">
+  <input type="text" id="to" placeholder="To">
+  <input type="number" id="people" placeholder="People">
+
+  <br><br>
+  <button class="btn" onclick="search()">Search</button>
+
+  <div id="result" style="margin-top:20px;"></div>
+</section>
+
+<script src="main.js"></script>
+</body>
+</html>
